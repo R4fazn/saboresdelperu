@@ -4,33 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores del Perú</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>SABORES DEL PERÚ</h1>
-        <a href="index.html">Inicio</a>
-        <a href="menu.html">Menú</a>
-        <a href="about.html">SobreNosotros</a>
-        <a href="reservas.html">Reservas</a>
-        <a href="contacto.html">Contacto</a><hr>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>   
     </header>
     <!--EN LA SECCION DE CONTACTO SE MOSTRARA UN FORMULARIO DONDE
     EL CLIENTE SE PODRA CONTACTAR CON EL RESTAURANTE A UN PRIVADO
     ADJUNTO A ELLO SE DEJARA LA UBICACION DEL LOCAL(BOTON QUE SE DIRIGE AL GOOGLE MAPS)
     JUNTO CON EL NUMERO Y CORREO DE LA EMPRESA-->
-        <h3>NOMBRE Y APELLIDO</h3>
-        <p>-</p>
-        <h3>CORREO ELECTRÓNICO</h3>
-        <p>-</p>
-        <h3>MENSAJE</h3>
-        <p>-</p>
-        <button>ENVIAR MENSAJE</button><hr>
-        <h2>INFORMACION DE CONTACTO</h2>
-        <p>Av.Central 124. ATE</p>
-        <button>Ver en Maps</button>
-        <p>TELÉFONO:<br><a href="#">922738239</a></p>
-        <p>CORREO ELECTRÓNICO:<br><a href="#">infosaboresdelperu@gmail.com</a></p><hr>
-        <p>FACEBOOK<a href="#">SaboresdelPerúF</a></p>
-        <p>INSTAGRAM<a href="#">SaboresdelPerúI</a></p>
+    <main>
+        <!--CONTACTARSE CON EL RESTAURANTE-->
+        <section class="contacto">
+            <h2>¡CONTÁCTANOS!</h2><hr>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+        <section>
+            <h3>Información de Contacto</h3>
+            <p>Av.Central 124. Ate</p>
+            <a href="https://www.google.com/maps/place/Av.+Central+124,+Lima+15498">
+                <button type="submit">Ver en Maps</button></a>
+            <p>200 Av. Los Ruiseñores. Santa Anita</p>
+            <a href="https://www.google.com/maps/place/Av.+Los+Ruise%C3%B1ores+200,+Lima+15009">
+                <button type="submit">Ver en Maps</button></a>
+            <p>C.Bellavista 270. Miraflores<p>
+            <a href="https://www.google.com/maps/place/C.+Bellavista+270,+Miraflores+15074">
+                <button type="submit">Ver en Maps</button></a>
+            <p>Av.Primavera 188. Surco</p>
+            <a href="https://www.google.com/maps/place/Av.+Primavera+188,+Lima+15037">
+                <button type="submit">Ver en Maps</button></a>
+            <p>Teléfono: <a href="tel:+51 922738239" style="text-decoration: none;">+51 922738239</a></p>
+            <p>Email: <a href="mailto:indosaboresdelperu@gmail.com" style="text-decoration: none;">infosaboresdelperu@gmail.com</a></p>
+            <p>Horarios de apertura:<br> 10:00 a.m / 11 p.m en cualquier local.</p>
+        </section>
+    </main>
+    <footer>
+        <ul class="redes">
+            <li>Faceboook</li>
+            <li><a href="#" style="color:blue">SaboresdelPeruF</a></li>
+            <li>Twitter</li>
+            <li><a href="#" style="color:aqua">@saboresdelperuX</a></li>
+            <li>Instagram</li>
+            <li><a href="#" style="color:blueviolet">@saboresdelperuig</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

@@ -4,70 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores del Perú</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .titulo{
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-    }
-</style>
 <body>
     <header>
         <h1>SABORES DEL PERÚ</h1>
-        <a href="index.html">Inicio</a>
-        <a href="menu.html">Menú</a>
-        <a href="about.html">SobreNosotros</a>
-        <a href="reservas.html">Reservas</a>
-        <a href="contacto.html">Contacto</a><hr>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>   
     </header>
-    <!--EN LA SECCION DE MENU SE MOSTRARA LOS PRINCIPALES
-    PLATOS DISPONIBLES EN EL RESTAURANTE (CARTA)-->
-        <h2 class="titulo"> PLATOS DE LA COSTA</h2>
-        <h3> Entradas:</h3>
-        <p>CEVICHE</p>
-        <img src="ceviche.jpg" width="350">
-        <p>COSTO : S/12.00</p>
-        <p>CAUSA RELLENA</p>
-        <img src="causa.jpg" width="350">
-        <p>COSTO : S/12.00</p>
-        <h3> Principales:</h3>
-        <p>LOMO SALTADO</p>
-        <img src="lomosaltado.jpg" width="350">
-        <p>COSTO : S/20.00</p>
-        <p>AJI DE GALLINA</p>
-        <img src="ajidegallina.jpg" width="350">
-        <p>COSTO : S/25.00</p><hr>
-        <h2> PLATOS DE LA SIERRA</h2>
-        <h3> Entradas:</h3>
-        <p>PATASCA</p>
-        <img src="patasca.jpg" width="250" height="300">
-        <p>COSTO : S/10.00</p>
-        <p>CHARQUI</p>
-        <img src="charqui.jpg" width="350">
-        <p>COSTO : S/12.00</p>
-        <h3> Principales:</h3>
-        <p>PACHAMANCA</p>
-        <img src="pachamanca.jpg" width="350">
-        <p>COSTO : S/25.00</p>
-        <p>PICANTE DE CUY</p>
-        <img src="picante.jpg" width="350">
-        <p>COSTO : S/20.00</p><hr>
-        <h2> PLATOS DE LA SELVA</h2>
-        <h3> Entradas:</h3>
-        <p>HUMITAS</p>
-        <img src="humitas.jpg" width="350">
-        <p>COSTO : S/10.00</p>
-        <p>PATACONES</p>
-        <img src="patacones.jpg" width="350">
-        <p>COSTO : S/15.00</p>
-        <h3> Principales:</h3>
-        <p>JUANES</p>
-        <img src="juane.jpg" width="350">
-        <p>COSTO : S/25.00</p>
-        <p>TACACHO CON CECINA</p>
-        <img src="tacacho.jpg" width="350">
-        <p>COSTO : S/30.00</p><hr>
-        <p>FACEBOOK<a href="#">SaboresdelPerúF</a></p>
-        <p>INSTAGRAM<a href="#">SaboresdelPerúI</a></p>
+    <main>
+        <section class="menu">
+            <h1>PLATOS DE LA COSTA</h1><hr>
+            <h2>Entradas:</h2>
+            <div class="menucarta">
+                <h3>CAUSA RELLENA</h3>
+                <img src="causa.jpg" width="350" alt="Causa Limeña">
+                <p>Precio: S/12.00</p>
+            </div>
+            <div class="menucarta">
+                <h3>CEVICHE</h3>
+                <img src="ceviche.jpg" width="350" alt="Ceviche">
+                <p>Precio: S/15.00</p>
+            </div>
+            <h2>Principales:</h2>
+            <div class="menucarta">
+                <h3>CAUSA RELLENA</h3>
+                <img src="lomosaltado.jpg" width="350" alt="Lomo Saltado">
+                <p>Precio: S/20.00</p>
+            </div>
+            <div class="menucarta">
+                <h3>CEVICHE</h3>
+                <img src="ajidegallina.jpg" width="350" alt="Aji de Gallina">
+                <p>Precio: S/25.00</p>
+            </div>
+        </section>
+        <section class="menu">
+            <h1>PLATOS DE LA SIERRA</h1><hr>
+            <h2>Entradas:</h2>
+            <div class="menucarta2">
+                <h3>PATASCA</h3>
+                <img src="patasca.jpg" width="250" height="300" alt="Patasca">
+                <p>Precio: S/10.00</p>
+            </div>
+            <div class="menucarta2">
+                <h3>CHARQUI</h3>
+                <img src="charqui.jpg" width="350" alt="Charqui">
+                <p>Precio: S/12.00</p>
+            </div>
+            <h2>Principales:</h2>
+            <div class="menucarta2">
+                <h3>PACHAMANCA</h3>
+                <img src="pachamanca.jpg" width="350" alt="Pachamanca">
+                <p>Precio: S/25.00</p>
+            </div>
+            <div class="menucarta2">
+                <h3>PICANTE DE CUY</h3>
+                <img src="picante.jpg" width="350" alt="Picante de Cuy">
+                <p>Precio: S/20.00</p>
+            </div>
+        </section>
+        <section class="menu">
+            <h1>PLATOS DE LA SELVA</h1><hr>
+            <h2>Entradas:</h2>
+            <div class="menucarta3">
+                <h3>HUMITAS</h3>
+                <img src="humitas.jpg" width="350" alt="Humitas">
+                <p>Precio: S/10.00</p>
+            </div>
+            <div class="menucarta3">
+                <h3>PATACONES</h3>
+                <img src="patacones.jpg" width="350" alt="Patacones">
+                <p>Precio: S/15.00</p>
+            </div>
+            <h2>Principales:</h2>
+            <div class="menucarta3">
+                <h3>JUANES</h3>
+                <img src="juane.jpg" width="350" alt="Juanes">
+                <p>Precio: S/25.00</p>
+            </div>
+            <div class="menucarta3">
+                <h3>TACACHO CON CECINA</h3>
+                <img src="tacacho.jpg" width="350" alt="Tacacho con Cecina">
+                <p>Precio: S/30.00</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="redes">
+            <li>Faceboook</li>
+            <li><a href="#" style="color:blue">SaboresdelPeruF</a></li>
+            <li>Twitter</li>
+            <li><a href="#" style="color:aqua">@saboresdelperuX</a></li>
+            <li>Instagram</li>
+            <li><a href="#" style="color:blueviolet">@saboresdelperuig</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

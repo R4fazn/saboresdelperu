@@ -1,0 +1,194 @@
+
+/*STYLE PARA CADA ENCABEZADO DE SECCIONES E INICIO*/
+header {
+    background-image: url(fondo.jpg);
+    color:black;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-family: "Playwrite NL", cursive;
+    font-size: 40px;
+    margin-top: -5px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3em;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #495057;
+}
+/*STYLE PARA FONDO DE LA PAGINA EN GENERAL Y ORDEN*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f1f1bd;
+}
+main {
+    flex: 1;
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*STYLE PARA LA SECCION DE INICIO*/
+.imagen{
+    text-align: center;
+}
+.inicio h2{
+    text-align: center;
+}
+.boton{
+    text-align: center;
+}
+.boton button{
+    background-color: dimgray;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    margin-top: 0,5em;
+    margin-bottom: 1em;
+}
+.boton a{
+    color:white;
+    text-decoration: none;
+}
+.video{
+    text-align: center;
+}
+/*STYLE PARA LA SECCION DE MENU*/
+.menu h1{
+    text-align: center;
+}
+.menucarta{
+    text-align: center;
+}
+.menucarta p{
+    border-width: 0.4em;
+    border-style: ridge;
+    border-color:goldenrod;
+}
+.menucarta2{
+    text-align: center;
+}
+.menucarta2 p{
+    border-width: 0.4em;
+    border-style: ridge;
+    border-color:saddlebrown;
+}
+.menucarta3{
+    text-align: center;
+}
+.menucarta3 p{
+    border-width: 0.4em;
+    border-style: ridge;
+    border-color:darkgreen;
+}
+/*STYLE PARA LA SECCION DE SOBRENOSOTROS*/
+.restaurante{
+    text-align: center;
+}
+.cocina{
+    text-align: center;
+}
+/*STYLE PARA LA SECCION DE RESERVAS*/
+.reserva h2 {
+    margin-top: 1;
+    color: #343a40;
+    text-align: center;
+}
+.reserva form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.reserva label {
+    font-weight: bold;
+}
+.reserva input, .reserva textarea {
+    padding: 0.5em;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.reserva button {
+    padding: 1em 2em;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.reserva button:hover {
+    background-color: #495057;
+}
+/*STYLE PARA LA SECCION DE CONTACTO*/
+.contacto h2{
+    margin-top: 1;
+    color: #343a40;
+    text-align: center;
+}
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contacto label {
+    margin-bottom: 0.5em;
+}
+.contacto input, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contacto button {
+    padding: 1em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+/*STYLE PARA EL PIE DE PAGINA DE TODAS LAS SECCIONES E INICIO*/
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.redes {
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+.redes li {
+margin: 0 10px;
+}
+.redes a {
+color: inherit;
+text-decoration: none;
+}
+
