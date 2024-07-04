@@ -2,11 +2,13 @@
 /*STYLE PARA CADA ENCABEZADO DE SECCIONES E INICIO*/
 header {
     background-image: url(fondo.jpg);
-    color:black;
+    color: black;
     padding: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 header h1 {
     font-family: "Playwrite NL", cursive;
@@ -81,6 +83,7 @@ main {
 }
 /*STYLE PARA LA SECCION DE MENU*/
 .menu h1{
+    color: #343a40;
     text-align: center;
 }
 .menucarta{
@@ -106,6 +109,41 @@ main {
     border-width: 0.4em;
     border-style: ridge;
     border-color:darkgreen;
+}
+/*STYLE PARA LA VENTA DE PROMOCION EN MENU*/
+#promo {
+    display: none;
+    position:fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#promo1 {
+    background-image: url(fondo3.jpg);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid white;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.equis {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.equis:hover,
+.equis:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*STYLE PARA LA SECCION DE SOBRENOSOTROS*/
 .restaurante{
@@ -136,7 +174,7 @@ main {
     box-sizing: border-box;
 }
 .reserva button {
-    padding: 1em 2em;
+    padding:1em 2em;
     background-color: #343a40;
     color: white;
     border: none;
@@ -159,20 +197,33 @@ main {
     gap: 1em;
 }
 .contacto label {
-    margin-bottom: 0.5em;
+    font-weight: bold;
 }
-.contacto input, form textarea {
+.contacto input, .contacto textarea {
     padding: 0.5em;
-    border: 1px solid #ccc;
+    border: 1px solid #ced4da;
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#captcha {
+    padding: 0.5em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .contacto button {
-    padding: 1em 2em;
-    background-color: #333;
+    padding:1em 2em;
+    background-color: #343a40;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    
+    transition: background-color 0.3s ease;
+}
+.contacto button:hover {
+    background-color: #495057;
 }
 /*STYLE PARA EL PIE DE PAGINA DE TODAS LAS SECCIONES E INICIO*/
 footer {

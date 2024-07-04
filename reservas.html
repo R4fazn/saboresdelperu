@@ -42,9 +42,11 @@
                 <input type="text" id="email" name="email" required placeholder="Coloque su Correo">
                 
                 <label for="comments">Comentarios especiales:</label>
-                <textarea id="comments" name="comments" rows="5" placeholder="Dejenos un comentario personal"></textarea>
+                <textarea id="comments" name="comments" rows="5" required placeholder="Dejenos un comentario personal"></textarea>
                 
-                <button type="submit">Enviar Reserva</button>
+                <div id="captcha"></div>
+
+                <button type="submit" onclick="validateForm()">Enviar Reserva</button>
             </form>
     </main>
     <footer>
@@ -57,5 +59,6 @@
             <li><a href="#" style="color:blueviolet">@saboresdelperuig</a></li>
         </ul>
     </footer>
+    <script src="CAPTCHA.js"></script>
 </body>
 </html>

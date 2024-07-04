@@ -22,14 +22,20 @@
     <main>
         <section class="contacto">
             <h2>¡CONTÁCTANOS!</h2><hr>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name">
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required>
+                
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Enviar Mensaje</button>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" required></textarea>
+                
+                <div id="captcha"></div>
+
+                <button type="button" onclick="validateForm()">Enviar</button>
+
             </form>
         </section>
         <section>
@@ -61,5 +67,6 @@
             <li><a href="#" style="color:blueviolet">@saboresdelperuig</a></li>
         </ul>
     </footer>
+    <script src="CAPTCHA.js"></script>
 </body>
 </html>
