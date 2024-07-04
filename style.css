@@ -40,16 +40,19 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     background-color: #f1f1bd;
 }
 main {
-    flex: 1;
     padding: 2em;
     background-color: white;
     margin: 1em;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 /*STYLE PARA LA SECCION DE INICIO*/
 .imagen{
